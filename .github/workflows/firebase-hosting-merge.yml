@@ -17,4 +17,4 @@ jobs:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_SUPERCHAT_4A439 }}'
           channelId: live
-          projectId: superchat-4a439
+          projectId: superchat-49f2a

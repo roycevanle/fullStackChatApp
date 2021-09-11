@@ -32,7 +32,7 @@ function App() {
   // when signed in, returns obj w/ userId, email address, etc...
   // when signed out, user is null.
   const [user] = useAuthState(auth);
-  // put something here to debug if you want to out to console
+
   return (
     <div className="App">
       <header>
@@ -56,13 +56,13 @@ function SignIn() {
     auth.signInWithPopup(provider);
   }
 
-  // returns a button that listens to clickEvent & runs func called signInWithGoogle ^above
-  return(
+  // returns a button that listens to clickEvent & runs func called signInWithGoogle above
+  return (
     <>
       <button className="sign-in" onClick={signInWithGoogle}>Sign in with Google</button>
       <p>Do not violate the community guidelines or you will be banned for life!</p>
     </>
-  );
+  )
 }
 
 // if there is a current user, we display the button to them with a onlcick to signout
