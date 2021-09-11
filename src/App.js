@@ -13,12 +13,12 @@ import { useCollectionData } from 'react-firebase-hooks/firestore';
 if (!firebase.apps.length) {
   firebase.initializeApp({
     apiKey: process.env.REACT_APP_SECRET_KEY,
-    authDomain: "superchat-4a439.firebaseapp.com",
-    projectId: "superchat-4a439",
-    storageBucket: "superchat-4a439.appspot.com",
-    messagingSenderId: "260263247546",
-    appId: "1:260263247546:web:0ee9e97a8fc6caa3688c83",
-    measurementId: "G-S7W2Q16L80"
+    authDomain: "superchat-49f2a.firebaseapp.com",
+    projectId: "superchat-49f2a",
+    storageBucket: "superchat-49f2a.appspot.com",
+    messagingSenderId: "353247523708",
+    appId: "1:353247523708:web:700d137881282fd6c06af9",
+    measurementId: "G-P1NT26VHF4"
   })
 } else {
   firebase.app();
