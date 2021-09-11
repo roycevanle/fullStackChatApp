@@ -1,11 +1,18 @@
 https://reactjs.org/docs/fragments.html#short-syntax
 *Fragments*
-When you have a component & want to return multiple elements, you can group a list of children w.o declaring extra nodes in the DOM.
+When you have a component & want to return multiple elements, you can group a list of 
+    children w.o declaring extra nodes in the DOM.
 
 https://stackoverflow.com/questions/10323392/in-javascript-jquery-what-does-e-mean
 *What (e) in javascript is*
 e is the short var reference for event object which is passed to event handlers
 
 https://stackoverflow.com/questions/4037939/powershell-says-execution-of-scripts-is-disabled-on-this-system
-*Execution of scripts is disabled on this sysetm*
-To fix this issue, run cmd with admin priv, then run the command "powershell Set-ExecutionPolicy RemoteSigned"
+*Execution of scripts is disabled on this system*
+To fix this issue, run cmd with admin priv, then run the command:
+    "powershell Set-ExecutionPolicy RemoteSigned"
+
+To Enable Google Sign-in
+1. Go to firebase console -> authentication tab -> sign-in method -> allow google
+2. Go to Firestore Database tab, go to gear -> project settings -> add app (add firebase to your app)
+3. Click on </> web icon, get javascript object which will identify your object (apiKey, authDomain, dabaseURL, appId, etc..)
