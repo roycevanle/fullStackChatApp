@@ -1,70 +1,17 @@
-# Getting Started with Create React App
+# FullStackChatApp
+You may find the project hosted here: https://superchat-4a439.web.app/
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
+### Overview
+This project is a chat application which where users may sign-in to get authenticated and then chat in a chatroom in real-time. The chat is organized chronologically and will display the user messages & their profile picture.
 
-## Available Scripts
+### Technologies Used
+Utilizes Bootstrap, Firebase, React, HTML, & CSS. This application authenticates users via Google Sign-In and handles real-time data using Firestore & React hooks.
 
-In the project directory, you can run:
+### Challenges Faced
+One challenge I faced while building this application was the deployment. I built the web app first and was displaying fine when I tested it using _npm run build_ but when it came to deploying it and integrating with firebase, I ran into issues of a white screen of death, getting 500 internal errors etc… After digging around, one of the solutions that worked for me was changing the firebase.json file that was built using firebase init, removing the “functions” aspect & fixing my index.html that was replaced in the process.
 
-### `npm start`
+Another challenge I face while building this application was getting the application to correctly read the data displayed in the Firebase Cloud Firestore. When I was creating my data base and inserted an example message, I couldn’t see that message being displayed in my application. My solution was to go into “Rules” of the database settings and change a one-liner from allow read/write from false to true, but that in itself took about an hour just to figure out! 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Features I hope to implement in the future
+One feature I hope to implement in the future is a limit function in order to stop people from spamming over 50 messages in one day. Another feature I hope to implement in the future is a language filter that will ban users who uses bad words.
