@@ -12,7 +12,7 @@ import { useCollectionData } from 'react-firebase-hooks/firestore';
 
 if (!firebase.apps.length) {
   firebase.initializeApp({
-    apiKey: "AIzaSyBReA8kMpWJqS1EEOBHp1kqPt8l3lJ7TDg",
+    apiKey: process.env.REACT_APP_SECRET_KEY,
     authDomain: "superchat-4a439.firebaseapp.com",
     projectId: "superchat-4a439",
     storageBucket: "superchat-4a439.appspot.com",
@@ -32,7 +32,7 @@ function App() {
   // when signed in, returns obj w/ userId, email address, etc...
   // when signed out, user is null.
   const [user] = useAuthState(auth);
-
+  // put something here to debug if you want to out to console
   return (
     <div className="App">
       <header>
@@ -148,7 +148,7 @@ function ChatMessage(props) {
   const messageClass = uid === auth.currentUser.uid ? 'sent' : 'received';
   return (
     <div className={`message ${messageClass}`}>
-      <img src={photoURL} />
+      <img src={photoURL} alt="user profile pic" />
       <p>{text}</p>
     </div>
   );
