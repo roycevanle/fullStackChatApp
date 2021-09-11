@@ -1,5 +1,5 @@
 # FullStackChatApp
-You may find the project hosted here: https://superchat-4a439.web.app/
+You may find the project hosted here: https://superchat-49f2a.web.app
 
 ## Description
 ### Overview
